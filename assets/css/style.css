@@ -24,7 +24,7 @@
   src: url('../fonts/Montserrat-Black.otf') format('truetype');
 }
 div,main,header{
-  /* border: 1px solid blue; */
+  /* border: 0.1px solid blue; */
 }
 body{
   margin: 0;
@@ -148,6 +148,7 @@ header{
   opacity: 0.95;
 }
 .videoDiv{
+  padding-top: 0.1px;
   background-image: url("../img/vidbg.jpg");
   background-size: 100% 100%;
   margin-top: 5.7vw;
