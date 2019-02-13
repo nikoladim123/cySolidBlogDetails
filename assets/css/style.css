@@ -23,7 +23,7 @@
   font-display: auto;
   src: url('../fonts/Montserrat-Black.otf') format('truetype');
 }
-div,main,header{
+div,main,header,form{
   /* border: 0.1px solid blue; */
 }
 body{
@@ -595,9 +595,41 @@ height: 6.5vw;
 .comments{
   display: flex;
   justify-content:  space-between;
-  width: 70%;
+  width: 60%;
 }
-
+.comments select{
+  height: 2vw;
+}
+.fbComnts{
+  width: 60%;
+  display: flex;
+}
+.sortBy{
+  display: flex;
+  align-items: center;
+}
+.profil{
+  width: 3vw;
+  height: 3vw;
+}
+form{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+  outline: none;
+}
+textarea::placeholder{
+  font-size: 1.3vw;
+}
+.logInToPost{
+  background-color: #4267b2;
+  color: white;
+  min-height: 1.5vw;
+  min-width: 5vw;
+  margin-left: 28vw;
+  font-family: 'Montserrat-Regular';
+}
 
 
 .moreArticles{
@@ -607,6 +639,9 @@ height: 6.5vw;
   text-decoration: none;
   font-size: 0.8vw;
   color: #e5080d;
+}
+.moreArticles:hover{
+  text-decoration: underline;
 }
 
 .secundArticleButtonBox{
