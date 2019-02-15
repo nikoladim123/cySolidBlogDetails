@@ -390,7 +390,9 @@ main{
   /* margin-bottom: 5vw; */
 }
 .content{
+  padding-top: 0.1px;
   /* border: 1px solid black; */
+  padding-top: 0.1px;
   padding-top: 0.1px;
   padding-bottom: 4vw;
   position: relative;
