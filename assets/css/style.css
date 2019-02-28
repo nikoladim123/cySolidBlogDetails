@@ -193,7 +193,8 @@ video{
   width: 86.4vw;
   height: 23.4vw;
   border: 1px solid #d7d7d7;
-  background-color:#1c0f00;
+  /* background-color:#1c0f00; */
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 40%);
   opacity: 0.91;
   overflow: hidden;
 }
@@ -223,7 +224,7 @@ video{
 .links a{
   transition: 0.4s;
   font-family: 'Montserrat-Light',serif;
-  color: white;
+  color: rgb(57,61,78);
   font-size: 1.171vw;
   text-decoration:none;
   padding: 5px 10px;
@@ -242,8 +243,8 @@ video{
 .burgerMenu{
   width: 4vw;
   margin-top: 0.25vw;
-  margin-left: 2.5vw;
-  margin-right: 4.888vw;
+  margin-left: 1vw;
+  margin-right: 8vw;
   /* height: 2vw; */
 }
 .burgerMenu:hover{
@@ -253,10 +254,18 @@ video{
   transition: 0.4s;
   left: 0;
   position: relative;
-  background-color: white;
-  height: 2px ;
+  background-color: rgb(255,252,7);
+  height: 0.296vw ;
   width: 100%;
-  margin-bottom: 0.6vw;
+  margin-bottom: 0.37vw;
+}
+.burgerLine:nth-child(1) {
+    width: 58%;
+    left: 42%;
+}
+.burgerLine:nth-child(3) {
+    width: 75%;
+    left: 25%;
 }
 
 .zero,.three{
@@ -265,21 +274,27 @@ video{
 .zeroParagraph{
   margin: 0;
   margin-left: 4.373vw;
-  margin-top: 3vw;
+  margin-top: 4.5vw;
   margin-bottom: 1vw;
   font-family: 'Montserrat-Black';
   font-size: 7.5vw;
-  color: rgb(219,151,69);
-  opacity: 0.1;
+  color: #ffae45;
+  opacity: 0.2;
 }
 .fastSecured{
+  transition: 0.4s;
+  z-index: 1;
   margin: 0;
   position: absolute;
   bottom: 0;
   left: 10.5vw;
   font-size: 2.4vw;
   font-family: 'Montserrat-Light';
-  color: rgb(175,121,56);
+  color: #ffae45;
+}
+.fastSecured:hover{
+  filter: brightness(150%);
+  cursor: pointer;
 }
 .threeParagraph{
   margin: 0;
@@ -288,33 +303,52 @@ video{
   margin-bottom: -1vw;
   font-family: 'Montserrat-Black';
   font-size: 7.5vw;
-  color: rgb(219,151,69);
-  opacity: 0.1;
+  color: #ffae45;
+  opacity: 0.2;
 }
 .byKhamak{
+  transition: 0.4s;
   margin: 0;
   position: absolute;
-  bottom: 0;
+  bottom: 3vw;
   left: 10.5vw;
   font-size: 1.1vw;
   font-family: 'Montserrat-Regular';
-  color: rgb(175,121,56);
+  color: #ffae45;
+}
+.byKhamak:hover{
+  filter: brightness(150%);
+  cursor: pointer;
 }
 
 .theInformation{
+  transition: 0.4s;
   position: absolute;
-  top: 5.5596vw;
+  top: 6.5596vw;
   right: 2.81vw;
   width: 38.917vw;
   height: 11.934vw;
-  border:1px solid rgb(255,255,255,0.25);
+  border:1px solid rgb(255,255,255,0.5);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.25);
 }
-.theInformation p{
+.theInformation:hover{
+  filter: brightness(150%);
+  box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+.theInformation p:nth-child(1){
   font-family: 'Montserrat-Light';
-  color: rgb(112,112,112);
+  color: white;
   font-size: 1.186vw;
   margin-left: 2.52vw;
   margin-top: 3.484vw;
+}
+.theInformation p:nth-child(2){
+  font-family: 'Montserrat-Regular';
+  color: white;
+  font-size: 1.186vw;
+  margin-left: 2.52vw;
+  margin-top: 1vw;
 }
 
 
