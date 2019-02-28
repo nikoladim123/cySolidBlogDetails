@@ -136,7 +136,7 @@ header{
   background-image: url('../img/header-bg.jpg');
   background-size: 100% 100%;
   position: relative;
-  height: 50.852vw;
+  height: calc(100vh + 6vw);
 }
 .headerOverlay{
   /* background: linear-gradient(135deg, rgba(131,99,219,0.92) 0%, rgba(240,172,152,0.92) 100%); */
@@ -361,9 +361,9 @@ main{
 }
 
 .webDevelopment{
-  margin-top: -1.85vw;
+  bottom: 6.5vw;
   margin-left: 5.5vw;
-  position: relative;
+  position: absolute;
 }
 .webDevelopment p{
   font-size: 4.444vw;
@@ -399,9 +399,31 @@ main{
   left: 0;
   top: -0vw;
   background-color: rgb(244,244,244);
-  width: 90.37vw;
+  width: 100%;
   /* height: 100%; */
 }
+
+.contactUsDivBut{
+  position: absolute;
+  right: 1vw;
+  top: 8vw;
+}
+.contactUsDivBut button{
+  font-family: 'Montserrat-Black',serif;
+  color: white;
+  font-size: 2.1vw;
+  border: none;
+  width: 23.481vw;
+  height: 5.555vw;
+  margin-bottom: 0.74vw;
+}
+.contactUsDivBut button:nth-child(1){
+  background-color: rgb(217,8,10);
+}
+.contactUsDivBut button:nth-child(3){
+  background-color: rgb(230,213,50);
+}
+
 .contentImgTextBigBox{
   /* overflow-y: scroll; */
   min-height: 40.07vw;
